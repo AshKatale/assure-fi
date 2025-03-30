@@ -5,6 +5,7 @@ import cors from 'cors';
 const app = express();
 const port = 3000;
 
+//App
 app.use(cors());
 
 // Global middleware for JSON parsing (used by GET route and POST route expecting JSON)

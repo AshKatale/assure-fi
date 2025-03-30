@@ -17,6 +17,7 @@ const fetchSentimentAnalysis = async (coinName) => {
       body: JSON.stringify({ coin: coinName }),
     });
     if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+    console.log(response.json)
     return await response.json();
   } catch (error) {
     console.error("Error fetching sentiment analysis:", error);
@@ -34,6 +35,8 @@ const fetchRecentTweets = async (coinName) => {
     if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
 
     const tweets = await response.json();
+    console.log(tweets);
+    
     return Array.isArray(tweets) ? [...tweets] : [];
   } catch (error) {
     console.error("Error fetching recent tweets:", error);

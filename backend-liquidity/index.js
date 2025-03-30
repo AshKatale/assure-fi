@@ -6,7 +6,7 @@ const agent = new Agent({
   systemPrompt: 'You are a helpful assistant.',
   apiKey: '188b898005eb4b31a7cccf8fd47e87c4'
 });
-
+//app
 // Add a liquidity monitoring capability
 agent.addCapability({
   name: 'getMonitoring',

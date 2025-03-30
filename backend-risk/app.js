@@ -4,7 +4,7 @@ import cors from 'cors';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 // dotenv.config();
-
+//App
 const app = express();
 const PORT = 3000;
 

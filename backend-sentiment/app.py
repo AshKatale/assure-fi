@@ -13,7 +13,7 @@ CORS(app)
 
 # Download NLTK resources
 nltk.download('vader_lexicon')
-
+#App
 # Supported cryptocurrencies and their tickers
 CRYPTO_MAPPING = {
     'bitcoin': ['btc'],
