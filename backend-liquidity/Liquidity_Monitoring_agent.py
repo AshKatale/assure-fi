@@ -462,8 +462,8 @@ def start_token_monitoring(chain_id: str, token_address: str, interval: int = 20
 def get_token():
     # Extract token address from the query parameters
     token_address = request.args.get('token_address')
-    # Optionally, get the chain_id from the query, defaulting to 'solana'
-    chain_id = request.args.get('chain_id', 'solana')
+    # Optionally, get the chain_id from the query, defaulting to 'seiv2'
+    chain_id = request.args.get('chain_id', 'seiv2')
     
     if not token_address:
         return jsonify({"error": "Token address is required"}), 400
