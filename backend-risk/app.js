@@ -83,7 +83,7 @@ app.post('/risk-analysis', async (req, res) => {
     const { token_name, token_address, smart_contract_address } = req.body;
     
     // Override chainId to "solana"
-    const chainId = "solana";
+    const chainId = "seiv2";
 
     if (!token_address || !smart_contract_address) {
       return res.status(400).json({ 
